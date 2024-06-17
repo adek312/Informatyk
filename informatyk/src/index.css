@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,10 +9,38 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #18191A;
+  color: #e4e6eb;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
     
+}
+
+.TopNavBar{
+  background-color: #242526;
+  vertical-align: top;
+}
+
+.TopNavBar > ul{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  list-style-type: none;
+  font-size: 19px;
+  text-transform: uppercase;
+  height: 60px;
+}
+
+.TopNavBar > ul > li{
+  padding: 10px;
+  width: 60px;
+  
+}
+
+.TopNavBar > ul > li:hover{
+  background-color: #131415;
+  cursor: pointer;
 }
