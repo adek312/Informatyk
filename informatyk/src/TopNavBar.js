@@ -1,13 +1,15 @@
 export default function TopNavBar(){
   return (
-    <nav>
-      <div class="TopNavBar">
-        <ul>
-          <li>Start</li>
-          <li>INF02</li>
-          <li>INF03</li>
-        </ul>
-      </div>
-    </nav>
+    <header>
+      <nav>
+        <div class="TopNavBar">
+          <ul>
+            <li><a href="#">Start</a></li>
+            <li><a href="#">INF02</a></li>
+            <li><a href="#">INF03</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
   );
 }
