@@ -18,30 +18,7 @@ code {
     monospace;  
 }
 
-.TopNavBar{
-  background-color: #242526;
-  padding: 10px;
-}
 
-.TopNavBar > ul{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  list-style-type: none;
-  font-size: 19px;
-  text-transform: uppercase;
-  height: 60px;
-}
-
-.TopNavBar > ul > li{
-  border: 15px solid rgba(0,0,0,0);
-}
-
-.TopNavBar > ul > li:hover{
-  background-color: #131415;
-  cursor: pointer;
-}
 
 a{
   text-decoration: none;

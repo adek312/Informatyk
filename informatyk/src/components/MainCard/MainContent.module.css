@@ -1,0 +1,20 @@
+.MainContent {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.MainContentHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #242526;
+  padding: 25px;
+  width: 1000px;
+  border-radius: 10px;
+}
+
+.MainContentDescription {
+  display: flex;
+  color: #d3d5da;
+}
