@@ -9,12 +9,27 @@
   flex-direction: column;
   align-items: center;
   background-color: #242526;
-  padding: 25px;
-  width: 1000px;
+  padding: 10px;
+  width: 1250px;
   border-radius: 10px;
+  font-size: 25px;
 }
 
 .MainContentDescription {
   display: flex;
+  flex-direction: column;
   color: #d3d5da;
+}
+
+.MainContentDescriptionText {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 19px;
+}
+
+.MainContentDescriptionImage{
+  display: flex;
+  gap: 50px;
+  margin-bottom: 25px;
 }
