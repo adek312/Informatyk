@@ -7,16 +7,16 @@ export default function TopNavBar() {
         <div className={styles.TopNavBar}>
           <ul>
             <li>
-              <a href="strona">Start</a>
+              <a href="start">Start</a>
             </li>
             <li>
-              <a href="strona">INF02</a>
+              <a href="inf02">INF02</a>
             </li>
             <li>
-              <a href="strona">INF03</a>
+              <a href="inf03">INF03</a>
             </li>
             <li>
-              <a href="strona">O egzaminie</a>
+              <a href="oegzaminie">O egzaminie</a>
             </li>
           </ul>
         </div>
