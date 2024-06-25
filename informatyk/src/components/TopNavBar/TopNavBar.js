@@ -6,18 +6,18 @@ export default function TopNavBar() {
       <nav>
         <div className={styles.TopNavBar}>
           <ul>
-            <li>
-              <a href="start">Start</a>
-            </li>
-            <li>
-              <a href="inf02">INF02</a>
-            </li>
-            <li>
-              <a href="inf03">INF03</a>
-            </li>
-            <li>
-              <a href="oegzaminie">O egzaminie</a>
-            </li>
+            <a href="start">
+              <li>Start</li>
+            </a>
+            <a href="inf02">
+              <li>INF02</li>
+            </a>
+            <a href="inf03">
+              <li>INF03</li>
+            </a>
+            <a href="oegzaminie">
+              <li>O Egzaminie</li>
+            </a>
           </ul>
         </div>
       </nav>

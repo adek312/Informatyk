@@ -14,11 +14,11 @@
     height: 60px;
   }
   
-  .TopNavBar > ul > li{
+  .TopNavBar > ul > a > li{
     border: 15px solid rgba(0,0,0,0);
   }
   
-  .TopNavBar > ul > li:hover{
+  .TopNavBar > ul > a > li:hover{
     background-color: #131415;
     cursor: pointer;
   }
