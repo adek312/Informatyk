@@ -21,8 +21,9 @@ axios.get('https://www.praktycznyegzamin.pl/ee08/teoria/wszystko/')
 
         const questionAnswerCorrect = $(element).find('div.answer.correct').text().trim();
         const questionImage = $(element).find('img').attr('src');
+        const questionVideo = $(element).find('source').attr('src');
 
-        data.push({ questionIndex, questionTitle, questionAnswers, questionAnswerCorrect, questionImage});
+        data.push({ questionIndex, questionTitle, questionAnswers, questionAnswerCorrect, questionImage, questionVideo});
     });
 
     const jsonData = JSON.stringify(data,null,2)
