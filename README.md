@@ -1,2 +1,2 @@
 # Informatyk
-Projekt typu egzamin-informatyk.pl / ee-informatyk.pl
+Projekt typu egzamin-informatyk.pl / ee-informatyk.pl / praktycznyegzamin.pl
