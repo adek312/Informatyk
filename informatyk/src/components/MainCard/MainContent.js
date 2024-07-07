@@ -1,19 +1,17 @@
 import "../../styles/MainContent.css";
+import propTypes from "prop-types"
 
-function MainContent() {
+function MainContent(props) {
   return (
     <section>
       <div className="MainContent">
         <div className="MainContentHeader">
-          <h2>Egzamin Teoretyczny</h2>
+          <h2>{props.header}</h2>
           <div />
           <div className="MainContentDescription">
             <div className="MainContentDescriptionText">
               <p>
-                Wybierz kwalifikacje i zacznij naukę do teorii.<br></br>
-                Więcej informacji o egzaminie teoretycznym znajdziesz:{" "}
-                <a href="oegzaminie"><span style={{color: "#58A4B0"}}>tutaj</span></a>
-                {/* Dodac do linku od razu scroll do sekcji egzamin teoria */}
+                {props.para}
               </p>
             </div>
             <div className="MainContentDescriptionImage">
@@ -26,5 +24,15 @@ function MainContent() {
     </section>
   );
 }
+
+MainContent.defaultProps = {
+  header: "Error",
+  para: "Error"
+};
+
+MainContent.propTypes = {
+  header: propTypes.string,
+  para: propTypes.string
+};
 
 export default MainContent;
