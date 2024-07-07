@@ -1,14 +1,14 @@
-import styles from "./MainContent.module.css";
+import "../../styles/MainContent.css";
 
 function MainContent() {
   return (
     <section>
-      <div className={styles.MainContent}>
-        <div className={styles.MainContentHeader}>
+      <div className="MainContent">
+        <div className="MainContentHeader">
           <h2>Egzamin Teoretyczny</h2>
           <div />
-          <div className={styles.MainContentDescription}>
-            <div className={styles.MainContentDescriptionText}>
+          <div className="MainContentDescription">
+            <div className="MainContentDescriptionText">
               <p>
                 Wybierz kwalifikacje i zacznij naukę do teorii.<br></br>
                 Więcej informacji o egzaminie teoretycznym znajdziesz:{" "}
@@ -16,7 +16,7 @@ function MainContent() {
                 {/* Dodac do linku od razu scroll do sekcji egzamin teoria */}
               </p>
             </div>
-            <div className={styles.MainContentDescriptionImage}>
+            <div className="MainContentDescriptionImage">
               <img src="https://via.placeholder.com/350" alt="INF02"></img>
               <img src="https://via.placeholder.com/350" alt="INF03"></img>
             </div>

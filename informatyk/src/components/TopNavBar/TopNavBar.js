@@ -1,10 +1,10 @@
-import styles from "./TopNavBar.module.css";
+import "../../styles/TopNavBar.css";
 
 export default function TopNavBar() {
   return (
     <header>
       <nav>
-        <div className={styles.TopNavBar}>
+        <div className="TopNavBar">
           <ul>
             <a href="start">
               <li>Start</li>
