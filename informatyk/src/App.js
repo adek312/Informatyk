@@ -3,7 +3,6 @@ import Start from "./pages/Start.js"
 import INF02 from './pages/INF02.js';
 import INF03 from './pages/INF03.js';
 import Oegzaminie from './pages/Oegzaminie.js';
-import Endpoint from './endpoint.js';
 
 function App() {
   return (
