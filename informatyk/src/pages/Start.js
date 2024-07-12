@@ -1,5 +1,5 @@
-import MainContent from "../components/MainCard/MainContent.js";
-import TopNavBar from "../components/TopNavBar/TopNavBar.js";
+import MainContent from "../components/MainContent.js";
+import TopNavBar from "../components/TopNavBar.js";
 
 function Start() {
   const inf02TeoriaPara = (

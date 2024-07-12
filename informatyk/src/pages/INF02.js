@@ -1,11 +1,11 @@
-import TopNavBar from "../components/TopNavBar/TopNavBar.js";
-import QuestionCard from "../components/QuestionCard/QuestionCard.js";
+import TopNavBar from "../components/TopNavBar.js";
+import QuestionCard from "../components/QuestionCard.js";
 
 export default function INF02() {
-    return (
-      <>
-        <TopNavBar></TopNavBar>
-        <QuestionCard></QuestionCard>
-      </>
-    );
-  }
+  return (
+    <>
+      <TopNavBar></TopNavBar>
+      <QuestionCard></QuestionCard>
+    </>
+  );
+}

@@ -1,4 +1,4 @@
-import TopNavBar from "../components/TopNavBar/TopNavBar.js";
+import TopNavBar from "../components/TopNavBar.js";
 
 export default function INF03() {
     return (

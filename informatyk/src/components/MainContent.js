@@ -1,4 +1,4 @@
-import "../../styles/MainContent.css";
+import "../styles/MainContent.css";
 import propTypes from "prop-types"
 
 function MainContent(props) {
