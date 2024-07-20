@@ -1,11 +1,17 @@
 import TopNavBar from "../components/TopNavBar.js";
-import QuestionCard from "../components/QuestionCard.js";
+import Quiz from "../components/Quiz.js";
+import "../styles/inf02.css";
+import React from "react";
 
 export default function INF02() {
   return (
     <>
       <TopNavBar></TopNavBar>
-      <QuestionCard></QuestionCard>
+      <div className="container">
+        <form>
+          <Quiz></Quiz>
+        </form>
+      </div>
     </>
   );
 }

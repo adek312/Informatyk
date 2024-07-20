@@ -12,11 +12,11 @@ axios.get('https://www.praktycznyegzamin.pl/ee08/teoria/wszystko/')
     $('.question').each((index, element) => {
         const questionIndex = index + 1;
         const questionTitle = $(element).find('div.title').text().trim();
-        const questionAnswers = {};
+        const questionAnswers = [];
         const answers = $(element).find('.answer')
         
         answers.each((answerIndex, answerElement) => {
-            questionAnswers[`odp${String.fromCharCode(65 + answerIndex)}`] = $(answerElement).text().trim();
+            questionAnswers.push( $(answerElement).text().trim());
         })
 
         const questionAnswerCorrect = $(element).find('div.answer.correct').text().trim();
