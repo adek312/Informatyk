@@ -8,9 +8,7 @@ export default function INF02() {
     <>
       <TopNavBar></TopNavBar>
       <div className="container">
-        <form>
           <Quiz></Quiz>
-        </form>
       </div>
     </>
   );

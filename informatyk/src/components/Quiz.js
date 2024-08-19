@@ -1,33 +1,36 @@
 // src/components/Quiz.js
-import React, { useState } from 'react';
-import questions from "../inf02pyt/PE_ee08/data.json";
-import QuestionCard from './QuestionCard.js';
+import React, { useEffect, useState } from "react";
+import QuestionCard from "./QuestionCard.js";
 
 const Quiz = () => {
-  const [answers, setAnswers] = useState({});
-  const [submitted, setSubmitted] = useState(false);
+  const [questions, setQuestions] = useState([]);
 
-  const handleAnswer = (questionId, answer) => {
-    setAnswers({ ...answers, [questionId]: answer });
-  };
+  useEffect(() => {
+    // Wczytanie danych z pliku JSON
+    const fetchData = async () => {
+      try {
+        const response = await fetch('/data.json');
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const data = await response.json();
+        setQuestions(data);
+      } catch (error) {
+        console.error('Error loading questions:', error);
+      }
+    };
 
-  const handleSubmit = () => {
-    setSubmitted(true);
-  };
+    fetchData();
+  }, []);
 
   return (
     <div className="quiz">
       {questions.map((question, index) => (
-        <QuestionCard
-          key={question.id}
-          question={question}
-          index={index}
-          handleAnswer={handleAnswer}
-        />
+        <QuestionCard key={index} question={question} />
       ))}
-      <button onClick={handleSubmit}>Submit</button>
     </div>
   );
+
 };
 
 export default Quiz;
