@@ -1,5 +1,5 @@
 import "../styles/QuestionCard.css";
-import React from "react";
+import React, { useState } from 'react';
 
 // walidacja odpowiedzi + tylko 1 odpowiedz zaznaczona
 
@@ -13,7 +13,12 @@ const QuestionCard = ({ question }) => {
       event.currentTarget.querySelector("input").click();
     }
   };
-  
+  const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
+  const handleChange = (index) => {
+    setSelectedAnswerIndex(index === selectedAnswerIndex ? null : index);
+  };
+
+  const staticClassName = "ansa" + question.questionIndex;
 
   return (
     <div className="question">
@@ -23,21 +28,24 @@ const QuestionCard = ({ question }) => {
       {question.questionAnswers.map((answer, index) => (
         <div
           key={index}
-          className={"questionCardAnswer"}
+          className={`questionCardAnswer ${selectedAnswerIndex === index ? 'odpChecked' : ''}`}
+          // className={["questionCardAnswer ", selectedAnswerIndex === index ? " odpChecked" : "",]}
           id={`odp${String.fromCharCode(97 + index)}`}
           onClick={handleClick}
         >
-          <label style={{cursor: "pointer"}}>
-            <input style={{cursor: "pointer"}}
+          <label for={staticClassName}>
+            <input
               type="checkbox"
-              className={"ansa" + question.questionIndex}
-              name={"ansa" + question.questionIndex}
+              className={staticClassName}
+              name={staticClassName}
               value={
                 `${String.fromCharCode(97 + index)}` + question.questionIndex
               }
+              checked={selectedAnswerIndex === index}
+              onChange={() => handleChange(index)}
             />
             <strong>{answer.slice(0, 3)}</strong>
-            {answer.slice(3)}
+            <span>{answer.slice(3)}</span>
           </label>
         </div>
       ))}

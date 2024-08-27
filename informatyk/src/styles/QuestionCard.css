@@ -2,6 +2,10 @@
   font-size: 19px;
 }
 
+label, input {
+  cursor: pointer;
+}
+
 .quiz{
   display: flex;
   flex-direction: column;
@@ -65,4 +69,8 @@
 .inf02Image img {
   width: auto;
   max-width: 100%;
+}
+
+.odpChecked{
+  background-color: #373F51;
 }
