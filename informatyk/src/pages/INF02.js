@@ -8,7 +8,7 @@ export default function INF02() {
     <>
       <TopNavBar></TopNavBar>
       <div className="container">
-          <Quiz></Quiz>
+        <Quiz></Quiz>
       </div>
     </>
   );
